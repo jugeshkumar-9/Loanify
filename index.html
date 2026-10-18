@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CreditWise – Smart Loan Approval Predictor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">C</span>
+    <div>
+      <h1>CreditWise</h1>
+      <p>Smart Loan Approval Predictor</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span id="status" class="badge" role="status">Checking API…</span>
+    <button id="theme" type="button" class="ghost" aria-pressed="false">Dark mode</button>
+  </div>
+</header>
+
+<main>
+  <div id="banner" class="banner" role="alert" hidden></div>
+
+  <form id="form" novalidate>
+    <div id="sections" class="grid"></div>
+    <div class="actions">
+      <button id="submit" class="primary" type="submit">
+        <span class="spin" hidden></span><span class="label">Check eligibility</span>
+      </button>
+      <button id="example" class="ghost" type="button">Fill example</button>
+      <button id="reset" class="ghost" type="button">Reset</button>
+    </div>
+  </form>
+
+  <section id="result" class="result" hidden aria-live="polite"></section>
+</main>
+
+<footer>Prediction from a student ML model, not financial advice.</footer>
+<script src="script.js"></script>
+</body>
+</html>
